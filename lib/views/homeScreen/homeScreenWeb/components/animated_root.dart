@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import '../../../components/constants/constants.dart';
+import 'package:updateportfolio/components/constants/constants.dart';
 import 'animated_coding.dart';
 
 SizedBox animatedRoot() {

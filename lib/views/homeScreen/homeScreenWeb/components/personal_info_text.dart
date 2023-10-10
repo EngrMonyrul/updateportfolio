@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../components/constants/constants.dart';
+import '../../../../components/constants/constants.dart';
 
 class PersonalInfoText extends StatelessWidget {
   final String? title, description;

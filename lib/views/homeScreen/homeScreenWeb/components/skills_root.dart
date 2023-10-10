@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import '../../../components/constants/constants.dart';
+import '../../../../components/constants/constants.dart';
 import 'animated_skills.dart';
 
 Widget skillRoot() {

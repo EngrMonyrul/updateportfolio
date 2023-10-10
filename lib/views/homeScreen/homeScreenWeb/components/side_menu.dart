@@ -1,11 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:updateportfolio/components/constants/constants.dart';
-import 'package:updateportfolio/views/homeScreen/components/my_info.dart';
-import 'package:updateportfolio/views/homeScreen/components/personal_info_text.dart';
-import 'package:updateportfolio/views/homeScreen/components/skills_section.dart';
+import 'package:updateportfolio/views/homeScreen/homeScreenWeb/components/skills_section.dart';
 
 import 'animated_skills.dart';
+import 'my_info.dart';
 
 Drawer sideMenu(BuildContext context) {
   return Drawer(

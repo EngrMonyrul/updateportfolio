@@ -1,9 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:updateportfolio/views/homeScreen/components/personal_info_text.dart';
-import 'package:updateportfolio/views/homeScreen/components/skills_root.dart';
-
-import '../../../components/constants/constants.dart';
+import 'package:updateportfolio/views/homeScreen/homeScreenWeb/components/personal_info_text.dart';
+import 'package:updateportfolio/views/homeScreen/homeScreenWeb/components/skills_root.dart';
+import '../../../../components/constants/constants.dart';
 import 'animated_coding.dart';
 import 'animated_root.dart';
 import 'animated_skills.dart';
