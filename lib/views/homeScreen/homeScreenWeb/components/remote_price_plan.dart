@@ -48,7 +48,7 @@ class ContainerArea extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: MediaQuery.of(context).size.height * 0.32,
+      height: MediaQuery.of(context).size.height * 0.3,
       width: MediaQuery.of(context).size.width * 0.33,
       padding: EdgeInsets.symmetric(vertical: 5),
       decoration: BoxDecoration(
@@ -85,7 +85,7 @@ class ContainerArea extends StatelessWidget {
                     )),
               ])),
           SizedBox(
-            height: 150,
+            height: 145,
             child: ListView.builder(
               padding: EdgeInsets.symmetric(horizontal: 35),
               itemCount: remotePricePlans[index]['services']!.length,
