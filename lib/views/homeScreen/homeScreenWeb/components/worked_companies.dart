@@ -52,7 +52,7 @@ class ContainerArea extends StatelessWidget {
             padding: const EdgeInsets.symmetric(vertical: 8.0),
             child: Text(
               workedCompanies[index]['name'],
-              style: TextStyle(color: hovered ? Colors.pink : null, fontSize: hovered ? 20 : 15),
+              style: TextStyle(color: hovered ? Colors.pink : null, fontWeight: hovered? FontWeight.bold:null),
             ),
           ),
         ],
