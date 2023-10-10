@@ -161,7 +161,7 @@ const List<Map<String, dynamic>> reviews = [
     'designation': 'Team Leader',
     'description':
         'Working with Monirul Islam has been a pleasure. Better yet - I alerted him of a minor issue before going to sleep. The issue was fixed the next morning. I couldn\'t ask for better support. Thank you Monirul Islam! This a easily a 5 start employee.',
-    'stars': 5,
+    'stars': 4,
   },
   {
     'name': 'Ariful Islam Rana',
@@ -170,7 +170,7 @@ const List<Map<String, dynamic>> reviews = [
     'designation': 'Team Leader',
     'description':
         'Working with Monirul Islam has been a pleasure. Better yet - I alerted him of a minor issue before going to sleep. The issue was fixed the next morning. I couldn\'t ask for better support. Thank you Monirul Islam! This a easily a 5 start employee.',
-    'stars': 5,
+    'stars': 3,
   },
   {
     'name': 'Ariful Islam Rana',
@@ -179,7 +179,7 @@ const List<Map<String, dynamic>> reviews = [
     'designation': 'Team Leader',
     'description':
         'Working with Monirul Islam has been a pleasure. Better yet - I alerted him of a minor issue before going to sleep. The issue was fixed the next morning. I couldn\'t ask for better support. Thank you Monirul Islam! This a easily a 5 start employee.',
-    'stars': 5,
+    'stars': 2,
   },
   {
     'name': 'Ariful Islam Rana',
@@ -188,7 +188,7 @@ const List<Map<String, dynamic>> reviews = [
     'designation': 'Team Leader',
     'description':
         'Working with Monirul Islam has been a pleasure. Better yet - I alerted him of a minor issue before going to sleep. The issue was fixed the next morning. I couldn\'t ask for better support. Thank you Monirul Islam! This a easily a 5 start employee.',
-    'stars': 5,
+    'stars': 1,
   },
 ];
 List<Map<String, dynamic>> workedCompanies = [
