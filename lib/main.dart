@@ -4,6 +4,7 @@ import 'package:provider/provider.dart';
 import 'package:updateportfolio/components/constants/constants.dart';
 import 'package:updateportfolio/views/homeScreen/home_screen.dart';
 import 'package:updateportfolio/views/homeScreen/provider/home_page_provider.dart';
+import 'package:updateportfolio/views/projectScreen/project_screen.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -31,7 +32,7 @@ class MyApp extends StatelessWidget {
                 bodyText2: const TextStyle(color: bodyTextColor),
               ),
         ),
-        home: const HomeScreen(),
+        home: const ProjectScreen(),
       ),
     );
   }

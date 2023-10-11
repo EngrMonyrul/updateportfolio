@@ -11,7 +11,9 @@ class Assets {
   static const String imagesClippingWorldCompanyImage = 'assets/images/clipping_world_company_image.png';
   static const String imagesOwnerImage = 'assets/images/owner_image.jpg';
   static const String imagesPerson1 = 'assets/images/person1.jpg';
+  static const String imagesProjectLogo = 'assets/images/project_logo.png';
   static const String imagesRemovedBgProfile = 'assets/images/removed_bg_profile.png';
   static const String imagesRemovedBgProfilePic = 'assets/images/removed_bg_profile_pic.png';
+  static const String imagesScreenshot20231011145157 = 'assets/images/project_ss.jpg';
 
 }
