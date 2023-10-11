@@ -8,6 +8,7 @@ class HomePageProvider extends ChangeNotifier {
   int _salaryHoverd = -1;
   int _reivewHovered = -1;
   int _workedHovered = -1;
+  bool _showCButtons = false;
 
   int get pageIndex => _pageIndex;
   int get sliderIndex => _sliderIndex;
@@ -16,6 +17,12 @@ class HomePageProvider extends ChangeNotifier {
   int get salaryHovered => _salaryHoverd;
   int get reviewHovered => _reivewHovered;
   int get workedHovered => _workedHovered;
+  bool get showCButtons => _showCButtons;
+
+  setShowCButtons(){
+    _showCButtons = !_showCButtons;
+    notifyListeners();
+  }
 
   setWorkedHover(index){
     _workedHovered = index;

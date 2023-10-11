@@ -1,6 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:updateportfolio/views/homeScreen/homeScreenLargeMobile/home_screen_large_mobile.dart';
+import 'package:updateportfolio/views/homeScreen/homeScreenMobile/home_screen_mobile.dart';
+import 'package:updateportfolio/views/homeScreen/homeScreenMobile/home_screen_mobile_handler.dart';
+import 'package:updateportfolio/views/homeScreen/home_screen.dart';
 
+import '../../views/homeScreen/homeScreenLargeMobile/home_screen_lmobile_handler.dart';
+import '../../views/homeScreen/homeScreenTab/home_screen_tab_view_handle.dart';
 import '../../views/homeScreen/homeScreenWeb/components/about_page_view_area.dart';
 import '../../views/homeScreen/homeScreenWeb/components/project_page_view_area.dart';
 import '../../views/homeScreen/homeScreenWeb/home_page_view_area.dart';
@@ -74,6 +80,15 @@ List<Widget> responsePages = [
   const HomePageViewArea(),
   const ProjectPageViewArea(),
   const AboutPageViewArea(),
+];
+List<Widget> responsePagesTab = [
+  const HomePageViewTabHandle(),
+];
+List<Widget> responsePagesLMobile = [
+  const HomePageViewAreaLMobile(),
+];
+List<Widget> responsePagesMobile = [
+  const HomePageViewMobileHandler(),
 ];
 const List<Map<String, dynamic>> serviceList = [
   {
