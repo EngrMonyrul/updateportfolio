@@ -10,6 +10,9 @@ import '../../views/homeScreen/homeScreenTab/home_screen_tab_view_handle.dart';
 import '../../views/homeScreen/homeScreenWeb/components/about_page_view_area.dart';
 import '../../views/homeScreen/homeScreenWeb/components/project_page_view_area.dart';
 import '../../views/homeScreen/homeScreenWeb/home_page_view_area.dart';
+import '../../views/projectScreen/projectScreenLMobile/project_screen_view_lmobile.dart';
+import '../../views/projectScreen/projectScreenTab/project_screen_view_tab.dart';
+import '../../views/projectScreen/projectScreenWeb/project_screen_view.dart';
 
 /*---------------> App colors <---------------*/
 const primaryColor = Color(0xFFFFC107);
@@ -78,17 +81,19 @@ List<dynamic> actionIcons = [
 ];
 List<Widget> responsePages = [
   const HomePageViewArea(),
-  const ProjectPageViewArea(),
-  const AboutPageViewArea(),
+  const ProjectScreenViewWeb(),
 ];
 List<Widget> responsePagesTab = [
   const HomePageViewTabHandle(),
+  const ProjectScreenViewTab(),
 ];
 List<Widget> responsePagesLMobile = [
   const HomePageViewAreaLMobile(),
+  const ProjectScreenViewLMobile(),
 ];
 List<Widget> responsePagesMobile = [
   const HomePageViewMobileHandler(),
+  const ProjectScreenViewLMobile(),
 ];
 const List<Map<String, dynamic>> serviceList = [
   {
@@ -218,61 +223,61 @@ List<Map<String, dynamic>> workedCompanies = [
 const dynamic projectLists = [
   {
     'projectNo': '1',
-    'projectVdo': 'https://www.youtube.com/watch?v=ObD6Jgvc71k',
+    'projectVdo': 'ObD6Jgvc71k',
     'projectLogo': 'assets/images/project_logo.png',
     'projectName': 'Project Name',
     'projectLink': 'https://github.com/EngrMonyrul/Counter_Example_Block_StateManagement',
-    'playStoreAccName':'MTechStudio',
-    'playStoreAccLink':'https://play.google.com/store/apps/details?id=com.scopely.monopolygo&hl=en&gl=US',
-    'porjectSS':['assets/images/project_ss.jpg','assets/images/project_ss.jpg','assets/images/project_ss.jpg'],
+    'playStoreAccName': 'MTechStudio',
+    'playStoreAccLink': 'https://play.google.com/store/apps/details?id=com.scopely.monopolygo&hl=en&gl=US',
+    'porjectSS': ['assets/images/project_ss.jpg', 'assets/images/project_ss.jpg', 'assets/images/project_ss.jpg'],
     'projectFeatures': ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p'],
     'projectTools': ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p']
   },
   {
     'projectNo': '2',
-    'projectVdo': 'https://www.youtube.com/watch?v=ObD6Jgvc71k',
+    'projectVdo': 'ObD6Jgvc71k',
     'projectLogo': 'assets/images/project_logo.png',
     'projectName': 'Project Name',
     'projectLink': 'https://github.com/EngrMonyrul/Counter_Example_Block_StateManagement',
-    'playStoreAccName':'MTechStudio',
-    'playStoreAccLink':'https://play.google.com/store/apps/details?id=com.scopely.monopolygo&hl=en&gl=US',
-    'porjectSS':['assets/images/project_ss.jpg','assets/images/project_ss.jpg','assets/images/project_ss.jpg'],
+    'playStoreAccName': 'MTechStudio',
+    'playStoreAccLink': 'https://play.google.com/store/apps/details?id=com.scopely.monopolygo&hl=en&gl=US',
+    'porjectSS': ['assets/images/project_ss.jpg', 'assets/images/project_ss.jpg', 'assets/images/project_ss.jpg'],
     'projectFeatures': ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p'],
     'projectTools': ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p']
   },
   {
     'projectNo': '3',
-    'projectVdo': 'https://www.youtube.com/watch?v=ObD6Jgvc71k',
+    'projectVdo': 'ObD6Jgvc71k',
     'projectLogo': 'assets/images/project_logo.png',
     'projectName': 'Project Name',
     'projectLink': 'https://github.com/EngrMonyrul/Counter_Example_Block_StateManagement',
-    'playStoreAccName':'MTechStudio',
-    'playStoreAccLink':'https://play.google.com/store/apps/details?id=com.scopely.monopolygo&hl=en&gl=US',
-    'porjectSS':['assets/images/project_ss.jpg','assets/images/project_ss.jpg','assets/images/project_ss.jpg'],
+    'playStoreAccName': 'MTechStudio',
+    'playStoreAccLink': 'https://play.google.com/store/apps/details?id=com.scopely.monopolygo&hl=en&gl=US',
+    'porjectSS': ['assets/images/project_ss.jpg', 'assets/images/project_ss.jpg', 'assets/images/project_ss.jpg'],
     'projectFeatures': ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p'],
     'projectTools': ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p']
   },
   {
     'projectNo': '4',
-    'projectVdo': 'https://www.youtube.com/watch?v=ObD6Jgvc71k',
+    'projectVdo': 'ObD6Jgvc71k',
     'projectLogo': 'assets/images/project_logo.png',
     'projectName': 'Project Name',
     'projectLink': 'https://github.com/EngrMonyrul/Counter_Example_Block_StateManagement',
-    'playStoreAccName':'MTechStudio',
-    'playStoreAccLink':'https://play.google.com/store/apps/details?id=com.scopely.monopolygo&hl=en&gl=US',
-    'porjectSS':['assets/images/project_ss.jpg','assets/images/project_ss.jpg','assets/images/project_ss.jpg'],
+    'playStoreAccName': 'MTechStudio',
+    'playStoreAccLink': 'https://play.google.com/store/apps/details?id=com.scopely.monopolygo&hl=en&gl=US',
+    'porjectSS': ['assets/images/project_ss.jpg', 'assets/images/project_ss.jpg', 'assets/images/project_ss.jpg'],
     'projectFeatures': ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p'],
     'projectTools': ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p']
   },
   {
     'projectNo': '5',
-    'projectVdo': 'https://www.youtube.com/watch?v=ObD6Jgvc71k',
+    'projectVdo': 'ObD6Jgvc71k',
     'projectLogo': 'assets/images/project_logo.png',
     'projectName': 'Project Name',
     'projectLink': 'https://github.com/EngrMonyrul/Counter_Example_Block_StateManagement',
-    'playStoreAccName':'MTechStudio',
-    'playStoreAccLink':'https://play.google.com/store/apps/details?id=com.scopely.monopolygo&hl=en&gl=US',
-    'porjectSS':['assets/images/project_ss.jpg','assets/images/project_ss.jpg','assets/images/project_ss.jpg'],
+    'playStoreAccName': 'MTechStudio',
+    'playStoreAccLink': 'https://play.google.com/store/apps/details?id=com.scopely.monopolygo&hl=en&gl=US',
+    'porjectSS': ['assets/images/project_ss.jpg', 'assets/images/project_ss.jpg', 'assets/images/project_ss.jpg'],
     'projectFeatures': ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p'],
     'projectTools': ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p']
   }

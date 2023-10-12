@@ -5,20 +5,22 @@ import 'package:updateportfolio/components/constants/constants.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:youtube_player_iframe/youtube_player_iframe.dart';
 
-class ProjectScreenViewWeb extends StatefulWidget {
-  const ProjectScreenViewWeb({super.key});
+class ProjectScreenViewLMobile extends StatefulWidget {
+  const ProjectScreenViewLMobile({super.key});
 
   @override
-  State<ProjectScreenViewWeb> createState() => _ProjectScreenViewWebState();
+  State<ProjectScreenViewLMobile> createState() => _ProjectScreenViewLMobileState();
 }
 
-class _ProjectScreenViewWebState extends State<ProjectScreenViewWeb> {
+class _ProjectScreenViewLMobileState extends State<ProjectScreenViewLMobile> {
   Future<YoutubePlayerController> initialYtVdo(String url) async {
     YoutubePlayerController youtubePlayerController = YoutubePlayerController.fromVideoId(
       videoId: url,
       autoPlay: true,
       params: const YoutubePlayerParams(showFullscreenButton: true),
     );
+
+    youtubePlayerController.mute();
 
     return youtubePlayerController;
   }
@@ -34,7 +36,7 @@ class _ProjectScreenViewWebState extends State<ProjectScreenViewWeb> {
           itemCount: projectLists.length,
           itemBuilder: (context, index) {
             return Container(
-              padding: EdgeInsets.symmetric(horizontal: 30, vertical: 30),
+              padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
               decoration: BoxDecoration(
                 color: Color(0xFF242430),
                 borderRadius: BorderRadius.all(Radius.circular(10)),
@@ -45,15 +47,15 @@ class _ProjectScreenViewWebState extends State<ProjectScreenViewWeb> {
                 children: [
                   Row(
                     children: [
-                      Image.asset(projectLists[index]['projectLogo'], height: 50, width: 50),
+                      Image.asset(projectLists[index]['projectLogo'], height: 30, width: 30),
                       SizedBox(width: 20),
                       Column(
                         mainAxisAlignment: MainAxisAlignment.start,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text(projectLists[index]['projectName'], style: TextStyle(color: primaryColor, fontSize: 20)),
-                          SizedBox(height: 8),
-                          Text(projectLists[index]['playStoreAccName']),
+                          Text(projectLists[index]['projectName'], style: TextStyle(color: primaryColor, fontSize: 15)),
+                          SizedBox(height: 3),
+                          Text(projectLists[index]['playStoreAccName'], style: TextStyle(fontSize: 10)),
                         ],
                       )
                     ],
@@ -81,28 +83,28 @@ class _ProjectScreenViewWebState extends State<ProjectScreenViewWeb> {
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
                       CupertinoButton(
-                        padding: EdgeInsets.symmetric(horizontal: 20, vertical: 5),
+                        padding: EdgeInsets.symmetric(horizontal: 10, vertical: 0),
                         color: Colors.green,
                         onPressed: () {
                           launchUrl(Uri.parse(projectLists[index]['playStoreAccLink']));
                         },
-                        child: Text('Install'),
+                        child: Text('Install', style: TextStyle(fontSize: 15)),
                       ),
                       CupertinoButton(
-                        padding: EdgeInsets.symmetric(horizontal: 20, vertical: 5),
+                        padding: EdgeInsets.symmetric(horizontal: 10, vertical: 0),
                         color: Colors.green,
                         onPressed: () {
                           Share.share(projectLists[index]['playStoreAccLink']);
                         },
-                        child: Icon(Icons.share),
+                        child: Icon(Icons.share, size: 15,),
                       ),
                       CupertinoButton(
-                        padding: EdgeInsets.symmetric(horizontal: 20, vertical: 5),
+                        padding: EdgeInsets.symmetric(horizontal: 10, vertical: 0),
                         color: Colors.green,
                         onPressed: () {
                           launchUrl(Uri.parse(projectLists[index]['projectLink']));
                         },
-                        child: Text('Github'),
+                        child: Text('Github', style: TextStyle(fontSize: 15)),
                       ),
                     ],
                   )
